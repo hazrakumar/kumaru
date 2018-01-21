@@ -1,13 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    char r[10];
+    char k[10];
     int a[10],i,j,sum=0,n;
-    gets(r);
-    n=strlen(r);
+    gets(k);
+    n=strlen(k);
     for(i=0;i<n;i++)
     {
-        switch(r[i])
+        switch(k[i])
         {
             case 'I':a[i]=1;
                      break;
