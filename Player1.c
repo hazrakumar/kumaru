@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-char a[15];
-scanf("%s",&a);
-printf("%s",(strrev(a)));
+char k[15];
+scanf("%s",&k);
+printf("%s",(strrev(k)));
 return 0;
 }
