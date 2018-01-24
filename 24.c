@@ -7,33 +7,24 @@ for(i=0;i<num;i++)
 scanf("%d",&a[i]);
 }
 k=0;
+
 for(i=0;i<num;i++)
 {
-for(j=num;j<5;j--)
+for(j=i+1;j<num;j++)
 {
-a[j]=a[i];
-}
-}
-for(i=0;i<num;i++)
+if(a[i]>a[j])
 {
-for(j=0;j<num;j++)
-{
-if(a[j]<a[i])
-{
+k=a[i];
+a[i]=a[j];
+a[j]=k;
 
-
-printf("%d",a[j]);
 
 }
 
 	
 }
+
+printf("%d",a[i]);
+
 	
-}
-
-
-
-
-
-return 0;
 }
