@@ -1,3 +1,4 @@
+#include<stdio.h>
 int main()
 {
 int a[5],num,i,k,j;
