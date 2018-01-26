@@ -2,36 +2,36 @@
 int main()
 {
 char stc[20];
-int i=0,count1=0,count2=0,count3=0,count;
+int i,count1=0,count2=0,count3=0,count,a=0,b=0,c=0;
 gets(stc);
-while(stc[i]!='\0') 
+for(i=0;stc[i]!='\0';i++)
 {
 if((stc[i]>='a' && stc[i]<='z') || (stc[i]>='A' && stc[i]<='Z') )
 {
 count1++;
-break;
 }
-i++;
-}
-while(stc[i]!='\0')
-{
-if(stc[i]>='0' && stc[i]<='9')	
+else if(stc[i]>='0' && stc[i]<='9')	
 {
 count2++;
-break;
 }
-i++;
-}
-while(stc[i]!='\0')
-{
-if(stc[i]!=)
+else 
 {
 count3++;
-break;
 }
-i++;
 }
-count=count1+count2+count3;
+if(count1>0)
+{
+a++;	
+}
+if(count2>0)
+{
+	b++;
+}
+if(count3>0)
+{
+	c++;
+}
+count=a+b+c;
 
 printf("%d",count);
 return 0;
