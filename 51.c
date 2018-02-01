@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-int num,i=0,k[50],temp,count=0;
+int num,i=0,k[50],temp,count=0,s;
 scanf("%d",&num);
 for(i=0;num!=0;i++,count++)
 {
@@ -9,9 +9,10 @@ temp=num%10;
 k[i]=temp;
 num=num/10;
 }
-for(i=0;i<count;i++)
+s=count-1;
+for(i=s;i>=0;i--)
 {
-printf("%d",k[i]);
+printf("%d\t",k[i]);
 }
 return 0;
 }
